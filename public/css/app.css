@@ -1,0 +1,86 @@
+.dashIcon:link{
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color:rgb(56, 54, 54);
+}
+.wrapper{
+    margin-top:56px;
+    margin-right: 5px;
+    width: 100%;
+}
+.wrapper .sideMenu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 56px;
+  width: 200px;
+  border: 1px solid rgba(165, 163, 163, 0.26);
+  transition: all ease 0.25s;
+  transform: translateX(-100%);
+  z-index: 2000;
+}
+.wrapper .content {
+    width: 100%;
+    margin-left: 0px;
+    transition: all ease 0.25s;
+}
+.active .sideMenu{
+    transform: translateX(0);
+}
+
+/*Side Menu and Conter Resize form*/
+@media(min-width: 768px){
+    .wrapper .sideMenu{
+        transform: translateX(0);
+    }
+    .wrapper .content{
+        margin-left:210px;
+    }
+    .active .sideMenu {
+    width: 80px;
+    }
+    .active .content {
+    margin-left: 80px;
+    }
+    .active .nav-link{
+        text-align: center;
+    }
+    .active .nav-link .icon{
+        margin-right: 0px;
+    }
+    .active .nav-link .text{
+        display: none;
+    }
+}
+.nav-link{
+    display: block;
+    white-space: nowrap;
+}
+.nav-link .icon{
+    margin-right: 4px;
+    font-size: 30px;
+    vertical-align: middle;
+    height: 32px;
+    width: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.ml-auto{
+    margin-right: 15px;
+}
+.sideMenu{
+    background: whitesmoke;
+}
+.logo{
+    width: 100px;
+}
+.logoProfile{
+    width:200px;
+}
+.side{
+    color:rgb(56, 54, 54);
+}
